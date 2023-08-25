@@ -7,3 +7,9 @@ $neutral-grayish-blue: hsl(220, 14%, 75%);
 $neutral-light-grayish-blue: hsl(223, 64%, 98%);
 $neutral-white: hsl(0, 0%, 100%);
 $neutral-black: hsl(0, 0%, 0%); // with 75% opacity for lightbox background
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
