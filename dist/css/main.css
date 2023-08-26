@@ -50,6 +50,39 @@ section {
   padding: 50px 30px;
 }
 
+.productPage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+.productPage__product-images {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.productPage__product-images .current-image {
+  max-width: 500px;
+}
+.productPage__product-images .current-image img {
+  max-width: 500px;
+  border-radius: 10px;
+}
+.productPage__product-images .thumbnails {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.productPage__product-images .thumbnails img {
+  max-width: 100px;
+  border-radius: 10px;
+}
+.productPage__product-images .thumbnails img:hover {
+  border: 2px solid hsl(26, 100%, 55%);
+}
+
 body {
   font-family: "Kumbh Sans", sans-serif;
   font-size: 16px;
