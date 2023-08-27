@@ -55,35 +55,59 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex: 1;
 }
 .productPage__product-images {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 30px;
+  flex: 1;
   outline: 1px solid red;
 }
 .productPage__product-images .current-image {
   width: 50%;
 }
 .productPage__product-images .current-image img {
-  max-width: 400px;
+  max-width: 500px;
   border-radius: 10px;
 }
 .productPage__product-images .thumbnails {
+  max-width: 500px;
   padding-top: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
+  outline: 1px solid red;
 }
 .productPage__product-images .thumbnails img {
-  max-width: 80px;
+  max-width: 100px;
   border-radius: 10px;
 }
 .productPage__product-images .thumbnails img:hover {
   border: 2px solid hsl(26, 100%, 55%);
+}
+.productPage__productText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+  flex: 1;
+}
+.productPage__productText .title {
+  color: hsl(26, 100%, 55%);
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.productPage__productText h1 {
+  font-size: 36px;
+  line-height: 42px;
+  padding: 15px 0 30px 0;
+}
+.productPage__productText p {
+  color: hsl(220, 14%, 75%);
 }
 
 body {
