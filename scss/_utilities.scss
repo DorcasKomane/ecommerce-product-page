@@ -3,7 +3,7 @@ header {
     margin: 0 auto;
     padding: 20px 0 40px 0;
     height: 80px;
-    border-bottom: 1px solid hsl(220, 14%, 75%);
+    border-bottom: 1px solid $neutral-grayish-blue;
 
     .logo {
         max-width: 100px;
@@ -26,7 +26,7 @@ header {
         }
 
         a {
-            color: hsl(220, 14%, 75%);
+            color: $neutral-grayish-blue;
             text-decoration: none;
         }
     }
