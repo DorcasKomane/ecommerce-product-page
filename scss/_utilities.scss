@@ -61,7 +61,7 @@ section {
 
 .shopping-cart {
     // border: 1px solid grey;
-    width: 250px;
+    width: 300px;
     padding: 20px;
     box-shadow: 0 7px 30px -10px rgba(150,170,180,0.5);
     position: absolute;
@@ -70,6 +70,7 @@ section {
 
     &__title-box {
         border-bottom: 1px solid $neutral-grayish-blue;
+        margin-bottom: 10px;
 
         .cart-title {
             display: block;
@@ -89,5 +90,69 @@ section {
         }
 
         display: none;
+    }
+
+    &__productBox {
+
+        .cart-product {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+
+            .prod-img {
+                max-width: 40px;
+                border-radius: 5px;
+            }
+    
+            h3 {
+                font-size: 12px;
+                color: $neutral-grayish-blue;
+            }
+
+            .cart-price {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                color: $neutral-grayish-blue;
+                font-size: 12px;
+
+                .product-price, 
+                .multiply, 
+                .cart-qty {
+                    margin-right: 5px;
+                }
+
+                .total {
+                    color: $neutral-black;
+                    font-weight: 700;
+                }
+
+                
+            }
+
+            .delete-icon {
+                max-width: 10px;
+            }
+        }
+        
+        button {
+            width: 100%;
+        }
+    }
+}
+
+.btn {
+    min-width: 200px;
+    padding: 10px 30px;
+    background: $primary-orange;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: $neutral-white;
+    letter-spacing: 1px;
+
+    &:hover {
+        background: hsl(26, 100%, 65%);
     }
 }

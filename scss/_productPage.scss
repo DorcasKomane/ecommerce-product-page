@@ -1,5 +1,4 @@
 .productPage {
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -164,23 +163,11 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                min-width: 200px;
                 margin-left: 10px;
-                padding: 10px 30px;
-                background: $primary-orange;
-                outline: none;
-                border: none;
-                border-radius: 5px;
-                color: $neutral-white;
-                letter-spacing: 1px;;
 
                 img {
                     max-width: 15px;
                     margin-right: 10px;
-                }
-
-                &:hover {
-                    background: hsl(26, 100%, 65%);
                 }
             }
         }
