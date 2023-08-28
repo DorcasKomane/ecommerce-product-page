@@ -21,8 +21,14 @@ header {
         padding-top: 10px;
 
         li {
-            padding-right: 20px;
+            padding: 0 0px 32px 0;
+            margin-right: 20px;
             font-size: 14px;
+            // outline: 2px solid red;
+
+            &:hover {
+                border-bottom: 2px solid $primary-orange;
+            }
         }
 
         a {

@@ -25,8 +25,12 @@ header ul {
   padding-top: 10px;
 }
 header ul li {
-  padding-right: 20px;
+  padding: 0 0px 32px 0;
+  margin-right: 20px;
   font-size: 14px;
+}
+header ul li:hover {
+  border-bottom: 2px solid hsl(26, 100%, 55%);
 }
 header ul a {
   color: hsl(220, 14%, 75%);
@@ -51,7 +55,6 @@ section {
 }
 
 .productPage {
-  outline: 1px solid green;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -62,7 +65,6 @@ section {
   justify-content: center;
   padding: 30px;
   flex: 1;
-  outline: 1px solid red;
 }
 .productPage__product-images .current-image {
   width: 50%;
@@ -78,13 +80,15 @@ section {
   justify-content: space-between;
   align-items: center;
   gap: 10px;
-  outline: 1px solid red;
 }
 .productPage__product-images .thumbnails img {
   max-width: 100px;
   border-radius: 10px;
 }
 .productPage__product-images .thumbnails img:hover {
+  opacity: 60%;
+}
+.productPage__product-images .thumbnails img:active {
   border: 2px solid hsl(26, 100%, 55%);
 }
 .productPage__productText {
@@ -102,14 +106,15 @@ section {
   letter-spacing: 1px;
 }
 .productPage__productText h1 {
-  font-size: 36px;
-  line-height: 42px;
+  font-size: 42px;
+  line-height: 48px;
   padding: 15px 0 30px 0;
 }
 .productPage__productText p {
   color: hsl(220, 14%, 75%);
   font-weight: 400;
-  font-size: 14px;
+  font-size: 18px;
+  line-height: 24px;
 }
 .productPage__productText .price {
   display: flex;
@@ -119,12 +124,12 @@ section {
   padding: 20px 0;
 }
 .productPage__productText .price .discounted-price {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 700;
   margin-right: 20px;
 }
 .productPage__productText .price .discounted-price span {
-  font-size: 10px;
+  font-size: 12px;
   background: hsl(25, 100%, 94%);
   margin-left: 10px;
   padding: 3px 5px;
@@ -132,7 +137,7 @@ section {
   color: hsl(26, 100%, 55%);
 }
 .productPage__productText .price .normal-price {
-  font-size: 10px;
+  font-size: 12px;
   margin-top: 5px;
   color: hsl(220, 14%, 75%);
 }
@@ -145,34 +150,59 @@ section {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  outline: 1px solid red;
+  border-radius: 5px;
+  height: 35px;
 }
 .productPage__productText .buttons .qty #minus {
   padding: 5px 10px;
   background: hsl(223, 64%, 98%);
   outline: none;
   border: none;
-  outline: 1px solid red;
 }
 .productPage__productText .buttons .qty #minus img {
   max-width: 10px;
+}
+.productPage__productText .buttons .qty #minus img:hover {
+  opacity: 60%;
 }
 .productPage__productText .buttons .qty span {
   background: hsl(223, 64%, 98%);
   font-size: 12px;
   font-weight: 700;
   padding: 5px 10px;
-  outline: 1px solid red;
 }
 .productPage__productText .buttons .qty #plus {
   padding: 5px 10px;
   background: hsl(223, 64%, 98%);
   outline: none;
   border: none;
-  outline: 1px solid red;
 }
 .productPage__productText .buttons .qty #plus img {
   max-width: 10px;
+}
+.productPage__productText .buttons .qty #plus img:hover {
+  opacity: 60%;
+}
+.productPage__productText .buttons .addToCart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 200px;
+  margin-left: 10px;
+  padding: 10px 30px;
+  background: hsl(26, 100%, 55%);
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: hsl(0, 0%, 100%);
+  letter-spacing: 1px;
+}
+.productPage__productText .buttons .addToCart img {
+  max-width: 15px;
+  margin-right: 10px;
+}
+.productPage__productText .buttons .addToCart:hover {
+  background: hsl(26, 100%, 65%);
 }
 
 body {
