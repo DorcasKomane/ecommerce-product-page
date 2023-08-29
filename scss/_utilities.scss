@@ -50,10 +50,6 @@ header {
         margin-right: 30px;
         background: $neutral-white;
         cursor: pointer;
-
-        &:hover {
-
-        }
     }
 
     .icon-cart {
@@ -120,7 +116,6 @@ header {
                     flex-direction: column;
                     justify-content: center;
                     align-items: flex-start;
-
                 }
         
                 h3 {
@@ -157,12 +152,32 @@ header {
                 width: 100%;
             }
         }
+        display: none;
     }
 
     .user-profile {
         max-width: 40px;
     }
 
+    .hamburger {
+        display: block;
+        width: 30px;
+        cursor: pointer;
+        height: 30px;
+        background-image: url("https://i.ibb.co/3Fx2YLw/icon-menu.png");
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-color: $neutral-white;
+        outline: none;
+        border: none;
+        appearance: none;
+        margin-top: 10px;
+        transition: 0.2s;
+    }
+
+    .hamburger.is-active {
+        background-image: url("https://i.ibb.co/whVkGrt/icon-close.png");
+    } 
 }
 
 section {
