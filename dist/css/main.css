@@ -36,6 +36,11 @@ header ul a {
   color: hsl(220, 14%, 75%);
   text-decoration: none;
 }
+@media screen and (max-width: 767px) {
+  header ul {
+    display: none;
+  }
+}
 header div {
   display: flex;
   justify-content: center;
@@ -151,6 +156,17 @@ header .hamburger {
 }
 header .hamburger.is-active {
   background-image: url("https://i.ibb.co/whVkGrt/icon-close.png");
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  z-index: 98;
+  background-color: hsl(0, 0%, 100%);
+  padding-top: 150px;
 }
 
 section {

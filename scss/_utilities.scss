@@ -34,6 +34,10 @@ header {
             color: $neutral-grayish-blue;
             text-decoration: none;
         }
+
+        @media screen and (max-width: 767px){
+            display: none;
+        }
     }
 
     div {
@@ -173,11 +177,23 @@ header {
         appearance: none;
         margin-top: 10px;
         transition: 0.2s;
+        // display: none;
     }
 
     .hamburger.is-active {
         background-image: url("https://i.ibb.co/whVkGrt/icon-close.png");
     } 
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 98;
+    background-color: $neutral-white;
+    padding-top: 150px;
 }
 
 section {
