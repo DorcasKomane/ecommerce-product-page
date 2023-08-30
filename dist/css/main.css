@@ -109,7 +109,7 @@ header .shopping-cart__productBox .cart-product {
   margin-bottom: 20px;
 }
 header .shopping-cart__productBox .cart-product .prod-img {
-  max-width: 40px;
+  width: 40%;
   border-radius: 5px;
 }
 header .shopping-cart__productBox .cart-product .cart-text {
@@ -163,6 +163,12 @@ header .hamburger {
   margin-top: 10px;
   transition: 0.2s;
   z-index: 2;
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  header .hamburger {
+    display: block;
+  }
 }
 header .hamburger.is-active {
   background-image: url("https://i.ibb.co/whVkGrt/icon-close.png");
@@ -185,7 +191,7 @@ header .hamburger.is-active {
   position: fixed;
   top: 0;
   left: 0;
-  width: 50%;
+  width: 60%;
   min-height: 100vh;
   z-index: 98;
   padding: 60px 40px;
@@ -221,25 +227,27 @@ section {
 
 .productPage {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 .productPage__product-images {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-end;
   padding: 30px;
   flex: 1;
 }
 .productPage__product-images .current-image {
-  width: 50%;
+  max-width: 400px;
 }
 .productPage__product-images .current-image img {
-  max-width: 500px;
+  max-width: 100%;
   border-radius: 10px;
+  align-self: center;
 }
 .productPage__product-images .thumbnails {
-  max-width: 500px;
+  max-width: 400px;
   padding-top: 20px;
   display: flex;
   justify-content: space-between;
@@ -247,8 +255,9 @@ section {
   gap: 10px;
 }
 .productPage__product-images .thumbnails img {
-  max-width: 100px;
+  max-width: 20%;
   border-radius: 10px;
+  align-self: center;
 }
 .productPage__product-images .thumbnails img:hover {
   opacity: 60%;
@@ -357,6 +366,16 @@ section {
 .productPage__productText .buttons .addToCart img {
   max-width: 15px;
   margin-right: 10px;
+}
+@media screen and (max-width: 767px) {
+  .productPage {
+    flex-direction: column;
+    width: 100%;
+  }
+  .productPage__product-images {
+    width: 100%;
+    outline: 1px solid green;
+  }
 }
 
 body {
