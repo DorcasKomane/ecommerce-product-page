@@ -86,12 +86,17 @@
             font-weight: 400;
             font-size: 18px;
             line-height: 24px;
+
+            @media screen and (max-width: 767px){
+                font-size: 16px;
+            }
         }
 
         .price {
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: center;
 
             font-weight: 700;
             padding: 20px 0;
@@ -115,6 +120,11 @@
                 font-size: 12px;
                 margin-top: 5px;
                 color: $neutral-grayish-blue;
+            }
+
+            @media screen and (max-width: 767px){
+                flex-direction: row;
+                justify-content: space-between;
             }
         }
 
