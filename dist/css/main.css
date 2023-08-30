@@ -166,15 +166,36 @@ header .hamburger.is-active {
   background-image: url("https://i.ibb.co/whVkGrt/icon-close.png");
 }
 
-.mobile-menu {
+.mobile-nav {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   min-height: 100vh;
   z-index: 98;
+  background-color: hsla(0, 0%, 0%, 0.7);
+  padding: 60px 40px;
+  outline: 1px solid red;
+}
+.mobile-nav ul {
+  list-style: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50%;
+  min-height: 100vh;
+  z-index: 98;
+  padding: 60px 40px;
   background-color: hsl(0, 0%, 100%);
-  padding-top: 150px;
+}
+.mobile-nav ul li {
+  padding: 10px 0;
+}
+.mobile-nav ul li a {
+  text-decoration: none;
+  color: hsl(0, 0%, 0%);
+  font-size: 14px;
+  font-weight: 700;
 }
 
 section {
@@ -341,4 +362,9 @@ body {
   max-width: 1440px;
   padding: 0 50px;
   margin: 0 auto;
+}
+@media screen and (max-width: 767px) {
+  body {
+    padding: 0 20px;
+  }
 }/*# sourceMappingURL=main.css.map */
