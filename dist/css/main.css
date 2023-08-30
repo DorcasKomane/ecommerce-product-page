@@ -109,7 +109,7 @@ header .shopping-cart__productBox .cart-product {
   margin-bottom: 20px;
 }
 header .shopping-cart__productBox .cart-product .prod-img {
-  width: 40%;
+  width: 40px;
   border-radius: 5px;
 }
 header .shopping-cart__productBox .cart-product .cart-text {
@@ -261,6 +261,7 @@ section {
 }
 .productPage__product-images .thumbnails img:hover {
   opacity: 60%;
+  cursor: pointer;
 }
 .productPage__product-images .thumbnails img:active {
   border: 2px solid hsl(26, 100%, 55%);
