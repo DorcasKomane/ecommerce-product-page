@@ -16,6 +16,13 @@ header .logo {
   margin-right: 50px;
   padding-top: 10px;
 }
+@media screen and (max-width: 767px) {
+  header .logo {
+    position: absolute;
+    top: 4%;
+    left: 20%;
+  }
+}
 header ul {
   display: flex;
   justify-content: center;
@@ -140,6 +147,7 @@ header .user-profile {
   max-width: 40px;
 }
 header .hamburger {
+  float: left;
   display: block;
   width: 30px;
   cursor: pointer;

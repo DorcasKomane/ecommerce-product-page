@@ -9,6 +9,12 @@ header {
         float: left;
         margin-right: 50px;
         padding-top: 10px;
+
+        @media screen and (max-width: 767px){
+            position: absolute;
+            top: 4%;
+            left: 20%;
+        }
     }
 
     ul {
@@ -164,6 +170,7 @@ header {
     }
 
     .hamburger {
+        float: left;
         display: block;
         width: 30px;
         cursor: pointer;
