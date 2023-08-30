@@ -8,8 +8,11 @@ window.onload = function(){
     });
 
     const menuBtn = document.querySelector('.hamburger');
+    const mobileNav = document.querySelector('#mobileNav');
 
     menuBtn.addEventListener('click', function(){
         menuBtn.classList.toggle('is-active');
+        menuBtn.style.zIndex = '5';
+        mobileNav.style.display = 'block';
     });
 }
