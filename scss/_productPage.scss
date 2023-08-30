@@ -138,7 +138,9 @@
                     background: $neutral-light-grayish-blue;
                     outline: none;
                     border: none;
-                    // outline: 1px solid red;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
 
                     img {
                         max-width: 10px;
@@ -172,6 +174,10 @@
                         }
                     }
                 }
+
+                @media screen and (max-width: 767px){
+                    width: 100%;
+                }
             }
 
             .addToCart {
@@ -185,6 +191,15 @@
                     margin-right: 10px;
                 }
             }
+
+            @media screen and (max-width: 767px) {
+                flex-direction: column;
+
+                .addToCart {
+                    width: 100%;
+                    margin: 10px 0;
+                }
+            }
         }
     }
 
@@ -195,6 +210,11 @@
         &__product-images {
             width: 100%;
             outline: 1px solid green;
+        }
+
+        &__productText {
+            padding: 30px 0;
+
         }
     }
 }

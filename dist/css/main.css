@@ -210,6 +210,11 @@ header .hamburger.is-active {
 section {
   padding: 50px 30px;
 }
+@media screen and (max-width: 767px) {
+  section {
+    padding: 50px 10px;
+  }
+}
 
 .btn {
   min-width: 200px;
@@ -339,6 +344,9 @@ section {
   background: hsl(223, 64%, 98%);
   outline: none;
   border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .productPage__productText .buttons .qty #minus img {
   max-width: 10px;
@@ -364,6 +372,11 @@ section {
 .productPage__productText .buttons .qty #plus img:hover {
   opacity: 60%;
 }
+@media screen and (max-width: 767px) {
+  .productPage__productText .buttons .qty {
+    width: 100%;
+  }
+}
 .productPage__productText .buttons .addToCart {
   display: flex;
   justify-content: center;
@@ -375,6 +388,15 @@ section {
   margin-right: 10px;
 }
 @media screen and (max-width: 767px) {
+  .productPage__productText .buttons {
+    flex-direction: column;
+  }
+  .productPage__productText .buttons .addToCart {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+@media screen and (max-width: 767px) {
   .productPage {
     flex-direction: column;
     width: 100%;
@@ -382,6 +404,9 @@ section {
   .productPage__product-images {
     width: 100%;
     outline: 1px solid green;
+  }
+  .productPage__productText {
+    padding: 30px 0;
   }
 }
 

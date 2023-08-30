@@ -240,6 +240,10 @@ header {
 
 section {
     padding: 50px 30px;
+
+    @media screen and (max-width: 767px){
+        padding: 50px 10px;
+    }
 }
 
 .btn {
