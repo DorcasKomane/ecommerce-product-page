@@ -68,6 +68,10 @@ header {
         max-width: 20px;
         margin-right: 30px;
 
+        @media screen and (max-width: 767px){
+            margin-right: 20px;
+        }
+
     }
 
     .shopping-cart {
