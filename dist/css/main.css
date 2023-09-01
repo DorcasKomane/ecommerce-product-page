@@ -444,12 +444,16 @@ section {
 }
 .productPage .popup span {
   position: absolute;
-  top: 0;
-  right: 10px;
+  top: 20%;
+  right: 40%;
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 400;
   cursor: pointer;
   color: hsl(0, 0%, 100%);
+}
+.productPage .popup span:hover {
+  color: hsl(26, 100%, 55%);
+  transition: 0.4s;
 }
 .productPage .popup .featured-image {
   max-width: 400px;

@@ -245,12 +245,17 @@
     
         span {
             position: absolute;
-            top: 0;
-            right: 10px;
+            top: 20%;
+            right: 40%;
             font-size: 40px;
-            font-weight: 700;
+            font-weight: 400;
             cursor: pointer;
             color: $neutral-white;
+
+            &:hover {
+                color: $primary-orange;
+                transition: 0.4s;
+            }
         }
 
         .featured-image {
