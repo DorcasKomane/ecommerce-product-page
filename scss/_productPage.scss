@@ -22,6 +22,10 @@
                 max-width: 100%;
                 border-radius: 10px;
                 align-self: center;
+
+                &:hover {
+                    cursor: pointer;
+                }
             }
         }
 
@@ -297,7 +301,7 @@
                 align-self: center;
 
                 &:hover {
-                    opacity: 60%;
+                    opacity: 50%;
                     cursor: pointer;
                 }
 
@@ -307,6 +311,15 @@
             }
         }
 
+        display: none;
+    }
+
+    .open{
+        display: block;
+    }
+
+    .closed {
+        display: none;
     }
 }
 

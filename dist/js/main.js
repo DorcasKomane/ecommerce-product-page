@@ -23,9 +23,25 @@ function myFunction(thumbnail){
     currentImage.style.width = '500px';
 }
 
+//To open lightbox
+currentImage.addEventListener('click', openLightBox);
+function openLightBox(){
+    document.querySelector('.popup').classList.add('open');
+}
+
+
 //for pop-up
-function myFunction(popupThumbnails){
+function myPopFunction(popupThumbnails){
     const currentPopupImage = document.getElementById('currentPopupImage');
     currentPopupImage.src = popupThumbnails.src;
     currentPopupImage.style.width = '500px';
+}
+
+
+//To close lightbox window
+const closePopUP = document.getElementById('close');
+closePopUP.addEventListener('click', closeLightBox);
+
+function closeLightBox(){
+    document.querySelector('.popup').classList.add('closed');
 }
