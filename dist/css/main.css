@@ -441,11 +441,15 @@ section {
   height: 100%;
   width: 100%;
   z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .productPage .popup span {
   position: absolute;
-  top: 20%;
-  right: 40%;
+  top: 9.5%;
+  right: 35.5%;
   font-size: 40px;
   font-weight: 400;
   cursor: pointer;
@@ -467,8 +471,8 @@ section {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.productPage .popup .popup-thumbnails {
-  max-width: 400px;
+.productPage .popup .popupThumbnails {
+  max-width: 350px;
   padding-top: 20px;
   display: flex;
   justify-content: space-between;
@@ -479,16 +483,16 @@ section {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.productPage .popup .popup-thumbnails img {
+.productPage .popup .popupThumbnails img {
   max-width: 20%;
   border-radius: 10px;
   align-self: center;
 }
-.productPage .popup .popup-thumbnails img:hover {
+.productPage .popup .popupThumbnails img:hover {
   opacity: 60%;
   cursor: pointer;
 }
-.productPage .popup .popup-thumbnails img:active {
+.productPage .popup .popupThumbnails img:active {
   border: 2px solid hsl(26, 100%, 55%);
 }
 

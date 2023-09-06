@@ -16,11 +16,16 @@
         shoppingCart.style.display = 'block';
     });
 
-    
-// }
 
 function myFunction(thumbnail){
     const currentImage = document.getElementById('currentImage');
     currentImage.src = thumbnail.src;
     currentImage.style.width = '500px';
+}
+
+//for pop-up
+function myFunction(popupThumbnails){
+    const currentPopupImage = document.getElementById('currentPopupImage');
+    currentPopupImage.src = popupThumbnails.src;
+    currentPopupImage.style.width = '500px';
 }
