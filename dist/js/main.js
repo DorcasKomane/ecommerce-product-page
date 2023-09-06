@@ -16,15 +16,19 @@ shoppingCart.style.display = 'block';
 //To add/remove items from cart
 const add = document.getElementById('plus');
 const minus = document.getElementById('minus');
-const qty =  document.getElementsByClassName('qtyText');
+const qtyText =  document.getElementById('qtyText');
 
 //increment/decrement quantity
 add.addEventListener('click', incrementQty);
 minus.addEventListener('click', decrementQty);
 
 function incrementQty(){
-    qty.textContent = 'hello'
-    console.log(qty.textContent);
+    let value = parseInt(qtyText.textContent);
+    value += 1;
+
+    qtyText.textContent = value;
+
+    // console.log(qtyText.textContent);
 }
 
 function decrementQty(){
