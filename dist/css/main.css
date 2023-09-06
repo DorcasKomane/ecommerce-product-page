@@ -335,6 +335,7 @@ section {
   margin-right: 20px;
 }
 .productPage .product-container__productText .price .discounted-price span {
+  display: inline-block;
   font-size: 12px;
   background: hsl(25, 100%, 94%);
   margin-left: 10px;
