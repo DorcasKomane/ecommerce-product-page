@@ -32,11 +32,15 @@ function incrementQty(){
 }
 
 function decrementQty(){
-    qty.innerText = 1;
-
-    console.log(qty.innertext);
+    let value = parseInt(qtyText.textContent);
+    
+    if(value === 0){
+        alert('Error: Quantity cannot be less than zero!')
+    }else{
+        value -= 1;
+        qtyText.textContent = value;
+    }
 }
-
 
 //For Lightbox
 function myFunction(thumbnail){
