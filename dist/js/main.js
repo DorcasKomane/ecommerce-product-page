@@ -1,4 +1,5 @@
 
+
     const menuBtn = document.querySelector('.hamburger');
     const mobileNav = document.querySelector('#mobileNav');
     const cartIcon = document.querySelector('#cartIcon');

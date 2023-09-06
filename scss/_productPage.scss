@@ -272,6 +272,35 @@
                 transform: translate(-50%, -50%);
             }
         }
+        
+        .popup-thumbnails {
+            max-width: 400px;
+            padding-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+
+            position: absolute;
+            top: 90%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
+            img {
+                max-width: 20%;
+                border-radius: 10px;
+                align-self: center;
+
+                &:hover {
+                    opacity: 60%;
+                    cursor: pointer;
+                }
+
+                &:active {
+                    border: 2px solid $primary-orange;
+                }
+            }
+        }
 
     }
 }
