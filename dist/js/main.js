@@ -25,10 +25,7 @@ minus.addEventListener('click', decrementQty);
 function incrementQty(){
     let value = parseInt(qtyText.textContent);
     value += 1;
-
     qtyText.textContent = value;
-
-    // console.log(qtyText.textContent);
 }
 
 function decrementQty(){
@@ -43,8 +40,9 @@ function decrementQty(){
 }
 
 //For Lightbox
+const currentImage = document.getElementById('currentImage');
+
 function myFunction(thumbnail){
-    const currentImage = document.getElementById('currentImage');
     currentImage.src = thumbnail.src;
     currentImage.style.width = '500px';
 }
@@ -68,4 +66,28 @@ closePopUP.addEventListener('click', closeLightBox);
 
 function closeLightBox(){
     document.querySelector('.popup').classList.add('closed');
+}
+
+//Add product to cart
+const addToCart = document.getElementById('addToCart');
+addToCart.addEventListener('click', addProduct);
+
+const productImage = document.querySelector('.product-img');
+const productTitle = document.querySelector('h3');
+const productPrice = document.querySelector('.product-price');
+const cartQuantity = document.querySelector('.cart-qty');
+const total = document.querySelector('.total');
+const mainProdTitle = document.querySelector('.main-product-title');
+const discountedPrice = document.querySelector('.discounted-price');
+
+function addProduct(){
+    // productImage.src = currentImage.src;
+    productTitle.innerText = mainProdTitle.innerText;
+    productPrice.innerText = discountedPrice.innerText;
+    cartQuantity.innerText = qtyText.innerText;
+    total.innerText = '$' + (parseInt(cartQuantity.innerText) * parseInt(productPrice.innerText)).toFixed(2); 
+
+    console.log(total.innerText);
+
+
 }
