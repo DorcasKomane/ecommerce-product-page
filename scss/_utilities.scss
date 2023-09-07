@@ -84,7 +84,7 @@ header {
        display: grid;
        grid-template-columns: 1fr;
 
-    &__title-box {
+        &__title-box {
             border-bottom: 1px solid $neutral-grayish-blue;
             margin-bottom: 10px;
             display: block;
@@ -109,8 +109,7 @@ header {
             display: none;
         }
 
-         &__productBox {
-
+        &__productBox {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -166,7 +165,16 @@ header {
                 width: 100%;
             }
         }
+
+        // display: none;
+    }
+
+    .cart-closed {
         display: none;
+    }
+
+    .cart-opened {
+        display: block;
     }
 
     .user-profile {

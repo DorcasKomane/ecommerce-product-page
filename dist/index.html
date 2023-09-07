@@ -28,23 +28,23 @@
                 <button type="button" id="cartIcon"><img class="icon-cart" src="https://i.ibb.co/ScTkRJM/icon-cart.png" alt="icon-cart"></button>
                 <img class="user-profile" src="https://i.ibb.co/1Qh3tP2/image-avatar.png" alt="image-avatar">
             </div>
-            <div class="shopping-cart" id="shoppingCart">
+            <div class="shopping-cart cart-closed" id="shoppingCart">
                 <div class="shopping-cart__title-box box">
                     <span class="cart-title">Cart</span>
                 </div>
-                <div class="shopping-cart__empty box">
+                <div class="shopping-cart__empty box" id="empty-cart">
                     <span class="empty-message">Your cart is empty</span>
                 </div>
-                <div class="shopping-cart__productBox box">
+                <div class="shopping-cart__productBox box" id="productBox">
                     <div class="cart-product">
-                        <img class="prod-img" src="https://i.ibb.co/bQBGdyj/image-product-1.jpg" alt="image-product-1">
+                        <img class="prod-img" src="">
                         <div class="cart-text">
                             <h3></h3>
                             <div class="cart-price">
-                                <span class="product-price">$200</span>
-                                <span class="multiply">x</span>
-                                <span class="cart-qty">1</span>
-                                <span class="total">$200</span>
+                                <span class="product-price"></span>
+                                <span class="multiply"></span>
+                                <span class="cart-qty">0</span>
+                                <span class="total"></span>
                             </div>
                         </div>
                         <img class="delete-icon" src="https://i.ibb.co/D8kx0MS/icon-delete.png" alt="icon-delete">
@@ -95,7 +95,10 @@
                                 <span class="discount">50%</span>
                             </div>
                             
-                            <span class="dollar-sign">$</span><span class="normal-price">250.00</span>
+                            <div class="normal-price-section">
+                                <span class="dollar-sign">$</span><span class="normal-price">250.00</span>
+                            </div>
+                            
                         </div>
                         <div class="buttons">
                             <div class="qty">

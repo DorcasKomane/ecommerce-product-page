@@ -108,27 +108,46 @@
             font-weight: 700;
             padding: 20px 0;
 
-            .discounted-price {
-                font-size: 22px;
-                font-weight: 700;
-                margin-right: 20px;
+            .discounted-price-section {
+                
+                .discounted-price {
+                    font-size: 22px;
+                    font-weight: 700;
+                    margin-right: 20px;
 
-                span {
-                    display: inline-block;
-                    font-size: 12px;
-                    background: $primary-pale-orange;
-                    margin-left: 10px;
-                    padding:3px 5px;
-                    border-radius: 5px;
-                    color: $primary-orange;
+                    span {
+                        display: inline-block;
+                        font-size: 12px;
+                        background: $primary-pale-orange;
+                        margin-left: 10px;
+                        padding:3px 5px;
+                        border-radius: 5px;
+                        color: $primary-orange;
+                    }
+                }
+
+                .dollar-sign {
+                    font-size: 22px;
+                    font-weight: 700;
                 }
             }
 
-            .normal-price {
-                font-size: 12px;
-                margin-top: 5px;
-                color: $neutral-grayish-blue;
+            .normal-price-section {
+                .normal-price {
+                    font-size: 12px;
+                    margin-top: 5px;
+                    color: $neutral-grayish-blue;
+                }
+
+                .dollar-sign {
+                    font-size: 13px;
+                    font-weight: 700;
+                    color: $neutral-grayish-blue;
+                }
             }
+            
+
+            
 
             @media screen and (max-width: 767px){
                 flex-direction: row;

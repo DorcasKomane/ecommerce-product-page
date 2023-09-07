@@ -80,7 +80,6 @@ header .shopping-cart {
   background-color: hsl(0, 0%, 100%);
   display: grid;
   grid-template-columns: 1fr;
-  display: none;
 }
 header .shopping-cart__title-box {
   border-bottom: 1px solid hsl(220, 14%, 75%);
@@ -148,6 +147,12 @@ header .shopping-cart__productBox .cart-product .delete-icon {
 }
 header .shopping-cart__productBox button {
   width: 100%;
+}
+header .cart-closed {
+  display: none;
+}
+header .cart-opened {
+  display: block;
 }
 header .user-profile {
   max-width: 40px;
@@ -329,12 +334,12 @@ section {
   font-weight: 700;
   padding: 20px 0;
 }
-.productPage .product-container__productText .price .discounted-price {
+.productPage .product-container__productText .price .discounted-price-section .discounted-price {
   font-size: 22px;
   font-weight: 700;
   margin-right: 20px;
 }
-.productPage .product-container__productText .price .discounted-price span {
+.productPage .product-container__productText .price .discounted-price-section .discounted-price span {
   display: inline-block;
   font-size: 12px;
   background: hsl(25, 100%, 94%);
@@ -343,9 +348,18 @@ section {
   border-radius: 5px;
   color: hsl(26, 100%, 55%);
 }
-.productPage .product-container__productText .price .normal-price {
+.productPage .product-container__productText .price .discounted-price-section .dollar-sign {
+  font-size: 22px;
+  font-weight: 700;
+}
+.productPage .product-container__productText .price .normal-price-section .normal-price {
   font-size: 12px;
   margin-top: 5px;
+  color: hsl(220, 14%, 75%);
+}
+.productPage .product-container__productText .price .normal-price-section .dollar-sign {
+  font-size: 13px;
+  font-weight: 700;
   color: hsl(220, 14%, 75%);
 }
 @media screen and (max-width: 767px) {
