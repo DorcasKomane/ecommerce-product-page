@@ -124,6 +124,7 @@ header {
                 .prod-img {
                     width: 40px;
                     border-radius: 5px;
+                    outline: 1px solid red;
                 }
                 .cart-text {
                     display: flex;
@@ -166,7 +167,6 @@ header {
             }
         }
 
-        // display: none;
     }
 
     .cart-closed {

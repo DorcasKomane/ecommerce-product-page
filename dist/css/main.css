@@ -115,6 +115,7 @@ header .shopping-cart__productBox .cart-product {
 header .shopping-cart__productBox .cart-product .prod-img {
   width: 40px;
   border-radius: 5px;
+  outline: 1px solid red;
 }
 header .shopping-cart__productBox .cart-product .cart-text {
   display: flex;
