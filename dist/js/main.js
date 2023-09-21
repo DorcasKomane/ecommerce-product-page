@@ -86,13 +86,11 @@ function addProduct(){
     prodImg.classList.add('prod-img');
     prodImg.src = currentImage.src;
     cartProduct.appendChild(prodImg);
-    cartProduct.style.outline = '1px solid red';
 
     //Add product details
     const cartText = document.createElement('div');
     cartProduct.appendChild(cartText);
     cartText.classList.add('cart-text');
-    cartText.style.outline = '1px solid green';
     
     const productTitle = document.createElement('h3');
     cartText.appendChild(productTitle);
@@ -116,18 +114,16 @@ function addProduct(){
     cartQty.classList.add('cart-qty');
     cartQty.innerText = qtyText.innerText;
     cartPrice.appendChild(cartQty);
-    cartQty.style.outline = '1px solid green';
 
     const total = document.createElement('span');
     total.classList.add('total');
     total.innerText = '$' + (parseInt(cartQty.innerText) * parseInt(productPrice.innerText)).toFixed(2);
     cartPrice.appendChild(total);
 
-
-    // productTitle.innerText = mainProdTitle.innerText;
-    // productPrice.innerText = discountedPrice.innerText;
-    // cartQuantity.innerText = qtyText.innerText;
-    // total.innerText = '$' + (parseInt(cartQuantity.innerText) * parseInt(productPrice.innerText)).toFixed(2); 
+    const deleteIcon = document.createElement('img');
+    deleteIcon.classList.add('delete-icon');
+    deleteIcon.src = 'https://i.ibb.co/D8kx0MS/icon-delete.png';
+    cartProduct.appendChild(deleteIcon); 
     
 }
 
@@ -154,6 +150,5 @@ function displayCart(){
 
         shoppingCart.classList.add('cart-opened');
     }
-      
-    // console.log(parseInt(cartQty.innerText));
+
 }
